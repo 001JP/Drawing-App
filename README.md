@@ -19,7 +19,7 @@ Drawing app developed in kotlin.
 - Draw on different brush sizes
 - Change paint color
 - Use images for background
-- Undo and redo your drawing
+- Undo and redo drawing
 - Save drawing as png file
 
 
