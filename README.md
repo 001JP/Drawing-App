@@ -25,6 +25,6 @@ Drawing app developed in kotlin.
 
 ## Demo
 
-[Download App on APKFab](https://apkfab.com/drawing-app/com.example.drawingapp/apk?h=27da705ec2c38e176857561c8ce4438e9dbc68422fc1a5704a36c73216e16bce)
+[Download App on APKFab](https://apkfab.com/drawing-app/com.example.drawingapp/apk?h=7c4c694bd160fb9d051e75ce80ecab7de3c85976e579bb3b4c9f6cca05b907cf)
 
 ![Demo](https://i.imgur.com/FSp6v0q.gif)
