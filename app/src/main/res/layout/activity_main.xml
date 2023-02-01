@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:background="@drawable/border_top"
+        android:gravity="center"
+        android:paddingVertical="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/undo_btn"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="2dp"
+            android:layout_marginHorizontal="32dp"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/undo_icon"
+            app:tint="#bbbbbb" />
+
+        <ImageButton
+            android:id="@+id/redo_btn"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="2dp"
+            android:layout_marginHorizontal="32dp"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/redo_icon"
+            app:tint="#bbbbbb" />
+
+        <ImageButton
+            android:id="@+id/select_image_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginHorizontal="32dp"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/import_img_icon"
+            app:tint="#bbbbbb" />
+
+        <ImageButton
+            android:id="@+id/save_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginHorizontal="32dp"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/save_icon"
+            app:tint="#bbbbbb" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_layout_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_drawing_view_layout"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <ImageView
+            android:id="@+id/image_view_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:alpha="0.5"/>
+
+        <com.example.drawingapp.DrawingView
+            android:id="@+id/drawing_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/card_view_color"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/image_button_brush"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/paint_icon"
+            android:tooltipText="Brush Size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="5dp"
+                android:paddingTop="7dp">
+
+
+                <ImageButton
+                    android:id="@+id/color_1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@color/white"
+                    android:src="@drawable/pallet"
+                    android:tag="#fd3537"
+                    app:tint="#fd3537" />
+
+                <ImageButton
+                    android:id="@+id/color_2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@color/white"
+                    android:src="@drawable/pallet"
+                    android:tag="#ffcb31"
+                    app:tint="#ffcb31" />
+
+                <ImageButton
+                    android:id="@+id/color_3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@color/white"
+                    android:src="@drawable/pallet"
+                    android:tag="#f8ed00"
+                    app:tint="#f8ed00" />
+
+                <ImageButton
+                    android:id="@+id/color_4"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@color/white"
+                    android:src="@drawable/pallet"
+                    android:tag="#2fedd3"
+                    app:tint="#2fedd3" />
+
+                <ImageButton
+                    android:id="@+id/color_5"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@color/white"
+                    android:src="@drawable/pallet"
+                    android:tag="#eb43cf"
+                    app:tint="#eb43cf" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="5dp"
+                android:paddingTop="3dp">
+
+
+                <ImageButton
+                    android:id="@+id/color_6"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@color/white"
+                    android:src="@drawable/pallet"
+                    android:tag="#3295fb"
+                    app:tint="#3295fb" />
+
+                <ImageButton
+                    android:id="@+id/color_7"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@color/white"
+                    android:src="@drawable/pallet"
+                    android:tag="#1647fe"
+                    app:tint="#1647fe" />
+
+                <ImageButton
+                    android:id="@+id/color_8"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@color/white"
+                    android:src="@drawable/pallet"
+                    android:tag="@color/black"
+                    app:tint="@color/black" />
+
+                <ImageButton
+                    android:id="@+id/color_9"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@color/white"
+                    android:src="@drawable/pallet"
+                    android:tag="#6ad2f4"
+                    app:tint="#6ad2f4" />
+
+                <FrameLayout
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginHorizontal="15dp">
+
+                    <ImageButton
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/pallet_gradient" />
+
+                    <ImageButton
+                        android:id="@+id/color_random"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/pallet_dynamic"
+                        android:tooltipText="Select Color" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

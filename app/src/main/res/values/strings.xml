@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Drawing App</string>
+    <string name="Select">Select</string>
+    <string name="Close">Close</string>
+</resources>

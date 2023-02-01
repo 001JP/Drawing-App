@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:layout_gravity="center"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="32dp"
+    android:backgroundTint="@color/card_view_color">
+
+
+
+    <ImageView
+        android:id="@+id/saved_image"
+        android:layout_width="250dp"
+        android:layout_height="450dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/dialog_new_drawing_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="New Drawing"
+            android:background="@drawable/dialog_background"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginHorizontal="2dp"
+            />
+
+        <TextView
+            android:id="@+id/dialog_back_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Go Back"
+            android:background="@drawable/dialog_background"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginHorizontal="2dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dialog_share_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/dialog_background"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Share" />
+
+</LinearLayout>
