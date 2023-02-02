@@ -10,6 +10,7 @@ Drawing app developed in kotlin.
 
 - Kotlin
 - Lottie Animation
+- Color picker
 - Android Studio
 - Git, Github
 
